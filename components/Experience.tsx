@@ -4,22 +4,11 @@ import { motion } from "framer-motion";
 
 const experiences = [
     {
-        role: "Data Science Intern",
-        company: "Tech Company Placeholder",
-        period: "May 2025 - Present",
-        description: "Built predictive models using Python and Scikit-learn. Optimized data pipelines for real-time analytics. Collaborated with cross-functional teams to deploy AI solutions.",
-    },
-    {
-        role: "Machine Learning Research Assistant",
-        company: "University Lab",
-        period: "Jan 2024 - Dec 2024",
-        description: "Researched deep learning architectures for computer vision tasks. Published findings in student journal. Implemented state-of-the-art models in PyTorch.",
-    },
-    {
-        role: "Software Engineering Intern",
-        company: "Startup Inc.",
-        period: "Summer 2023",
-        description: "Developed RESTful APIs using Node.js. Improved database query performance by 40%. Assisted in frontend migration to React.",
+        role: "Data Intern",
+        company: "National Book Trust, Ministry of Education (Govt. of India)",
+        period: "Jan 2025 – Mar 2025",
+        description:
+            "Worked on cleaning, transforming, and organizing structured datasets to improve data accuracy and consistency. Performed data analysis across multiple categories and sub-categories and created advanced Excel pivot tables and summary reports to support data-driven insights for internal stakeholders.",
     },
 ];
 
@@ -45,7 +34,7 @@ export default function Experience() {
                             initial={{ opacity: 0, x: -20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1, duration: 0.5 }}
+                            transition={{ duration: 0.5 }}
                             className="relative pl-8 md:pl-0"
                         >
                             {/* Timeline Line (Desktop) */}
@@ -60,7 +49,10 @@ export default function Experience() {
                                     {/* Dot */}
                                     <div className="absolute -left-[3.4rem] top-1.5 w-3 h-3 rounded-full bg-zinc-800 ring-4 ring-black group-hover:bg-blue-500 transition-colors hidden md:block" />
 
-                                    <div className="md:hidden text-sm text-zinc-500 font-mono mb-1">{exp.period}</div>
+                                    <div className="md:hidden text-sm text-zinc-500 font-mono mb-1">
+                                        {exp.period}
+                                    </div>
+
                                     <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
                                         {exp.role}
                                     </h3>
