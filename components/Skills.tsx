@@ -14,7 +14,7 @@ const skillCategories = [
     {
         title: "Languages",
         icon: Code,
-        skills: ["Python", "SQL", "JavaScript", "C++", "TypeScript"],
+        skills: ["Python", "SQL", "JavaScript", "C++"],
     },
     {
         title: "AI & Machine Learning",
@@ -34,7 +34,7 @@ const skillCategories = [
     {
         title: "Tools & DevOps",
         icon: Terminal,
-        skills: ["Git", "Docker", "Linux", "VS Code", "Jupyter"],
+        skills: ["Git", "Windows", "Linux", "VS Code", "Unreal Engine"],
     },
     {
         title: "Core Concepts",
