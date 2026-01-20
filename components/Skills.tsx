@@ -33,7 +33,7 @@ const skillCategories = [
     {
         title: "Tools",
         icon: Terminal,
-        skills: ["Git", "Windows", "Linux", "VS Code", "Unreal Engine"],
+        skills: ["Git", "Windows", "Linux", "VS Code", "Microsoft Office"],
     },
 ];
 
@@ -57,7 +57,7 @@ export default function Skills() {
                         <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 tracking-tight">Skills</h2>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
+                    <div className="flex flex-wrap justify-center gap-6 relative z-10">
                         {skillCategories.map((category, index) => (
                             <motion.div
                                 key={category.title}
@@ -65,7 +65,7 @@ export default function Skills() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                                className="bg-zinc-900/40 border border-white/5 rounded-2xl p-8 flex flex-col items-center text-center hover:bg-zinc-900/60 hover:border-white/10 transition-all duration-300 group"
+                                className="bg-zinc-900/40 border border-white/5 rounded-2xl p-8 flex flex-col items-center text-center hover:bg-zinc-900/60 hover:border-white/10 transition-all duration-300 group w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.33%-1.5rem)] min-w-[300px]"
                             >
                                 <div className="mb-5 p-3 rounded-full bg-white/5 text-zinc-400 group-hover:text-blue-400 group-hover:bg-blue-500/10 transition-all duration-300">
                                     <category.icon size={28} strokeWidth={1.5} />
