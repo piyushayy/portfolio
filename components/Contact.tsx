@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 
 export default function Contact() {
@@ -39,10 +39,6 @@ export default function Contact() {
                         <Link href="https://www.linkedin.com/in/piyush-kaushik-4b9863381/" className="text-zinc-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
                             <Linkedin size={32} />
                             <span className="sr-only">LinkedIn</span>
-                        </Link>
-                        <Link href="https://twitter.com" className="text-zinc-400 hover:text-white transition-colors hover:scale-110 transform duration-200">
-                            <Twitter size={32} />
-                            <span className="sr-only">Twitter</span>
                         </Link>
                     </div>
                 </motion.div>

@@ -6,8 +6,7 @@ import {
     Brain,
     Database,
     Layout,
-    Terminal,
-    Cpu
+    Terminal
 } from "lucide-react";
 
 const skillCategories = [
@@ -19,7 +18,7 @@ const skillCategories = [
     {
         title: "AI & Machine Learning",
         icon: Brain,
-        skills: ["PyTorch", "TensorFlow", "Computer Vision", "NLP", "Scikit-learn"],
+        skills: ["PyTorch", "TensorFlow", "Computer Vision"],
     },
     {
         title: "Data Science",
@@ -29,17 +28,12 @@ const skillCategories = [
     {
         title: "Web Development",
         icon: Layout,
-        skills: ["React", "Next.js", "Tailwind CSS", "Node.js", "REST APIs"],
+        skills: ["React", "Next.js", "Tailwind CSS", "Node.js"],
     },
     {
-        title: "Tools & DevOps",
+        title: "Tools",
         icon: Terminal,
         skills: ["Git", "Windows", "Linux", "VS Code", "Unreal Engine"],
-    },
-    {
-        title: "Core Concepts",
-        icon: Cpu,
-        skills: ["Data Structures", "Algorithms", "OOP", "DBMS", "System Design"],
     },
 ];
 
